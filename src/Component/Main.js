@@ -75,7 +75,7 @@ function Main() {
       if (typeOfIncomeUsed[incomecategory] === 0) {
         settypeOfIncomeUsed({ ...typeOfIncomeUsed, [incomecategory]: 1 });
         try {
-          const response = await fetch("http://localhost:8000/result", {
+          const response = await fetch("https://accutax-backend-ai.onrender.com/result", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ question, incomecategory }),
@@ -112,7 +112,7 @@ function Main() {
         Query: What is the final taxable income after all possible deduction deduction?`;
       try {
         const response = await fetch(
-          "http://localhost:8000/caculatededuction",
+          "https://accutax-backend-ai.onrender.com/caculatededuction",
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
