@@ -1,0 +1,15 @@
+.footer{
+    position: absolute;
+    margin-top: 70px;
+    width: 100%;
+    padding: 20px 30px 20px 30px;
+    background-color: #040D12;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.fa-brands{
+    font-size: 25px;
+    margin-right: 10px;
+}

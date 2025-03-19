@@ -1,0 +1,100 @@
+/* Container for the whole profile page */
+.profile-container {
+    display: flex;
+    margin-top: 60px;
+    min-height: 100vh;
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    width: 20%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .link-div{
+    margin-top: 50px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+  }
+  .Profileimage{
+    aspect-ratio: 1/1;
+    width: 80%;
+    background-color: #fff;
+  }
+  .sidebar-link {
+    margin-bottom: 20px;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    color: #007bff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .sidebar-link:hover {
+    color: #0056b3;
+  }
+  
+  /* Content Box styling */
+  .content {
+    width: 80%;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Basic styling for the content */
+  .content p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .formdiv{
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .inputbox{
+    width: 400px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+
+    label{
+      margin-bottom: 3px;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    input,select{
+      width: 100%;
+      height: 40px;
+      outline: none;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    textarea{
+      width: 100%;
+      height: 70px;
+      outline: none;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+  }
+  .save-personal-btn{
+   float: right;
+   margin-right: 10px;
+    margin-top: 10px;
+  }
