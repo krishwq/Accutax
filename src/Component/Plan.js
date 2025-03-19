@@ -8,7 +8,7 @@ function Plan() {
 
     const buybasicplan=async() => {
       try {
-        const response = await fetch("http://localhost:5000/api/auth/updateuser", {
+        const response = await fetch("https://accutax-backend.onrender.com/api/auth/updateuser", {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
@@ -29,7 +29,7 @@ function Plan() {
     }
     const buystandardplan=async() => {
       try {
-        const response = await fetch("http://localhost:5000/api/auth/updateuser", {
+        const response = await fetch("https://accutax-backend.onrender.com/api/auth/updateuser", {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({

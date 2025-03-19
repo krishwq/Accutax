@@ -14,7 +14,7 @@ function Element1() {
     const getUser = async () => {
       if (!user) return;
       try {
-        const response = await fetch("http://localhost:5000/api/auth/getuser", {
+        const response = await fetch("https://accutax-backend.onrender.com/api/auth/getuser", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ email: user.email }),
@@ -40,7 +40,7 @@ function Element1() {
     if (diffDays > userData.suscribe_days  && userData.is_subscribed) {
       setUserData({ ...userData, is_subscribed: false });
       const updateuser=async()=>{
-        const response = await fetch("http://localhost:5000/api/auth/updateuser", {
+        const response = await fetch("https://accutax-backend.onrender.com/api/auth/updateuser", {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
